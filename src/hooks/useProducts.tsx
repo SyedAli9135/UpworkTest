@@ -17,7 +17,7 @@ const useProducts = () => {
 
   useEffect(() => {
     fetchProducts();
-  }, [page, limit]);
+  }, [page, limit, fetchProducts]);
 
   return { products, loading, page, setPage };
 };
